@@ -1,4 +1,4 @@
-import Quiz from "./component/Quiz";
+import Quiz from "./component/Quiz.jsx";
 
 const App = () => {
   return (
