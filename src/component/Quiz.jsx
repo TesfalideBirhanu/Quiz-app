@@ -15,7 +15,9 @@ const Quiz = () => {
         setScore((s) => s + 1);
       } else {
         e.target.classList.add("wrong");
-
+        document
+          .getElementById(`${question.correctAnswer}`)
+          .classList.add("correct");
         setLock(true);
       }
     }
@@ -63,10 +65,18 @@ const Quiz = () => {
             {index + 1}. {question.question}
           </h3>
           <ol>
-            <li onClick={(e) => handleAnswer(e, 0)}>{question.answers[0]}</li>
-            <li onClick={(e) => handleAnswer(e, 1)}>{question.answers[1]}</li>
-            <li onClick={(e) => handleAnswer(e, 2)}>{question.answers[2]}</li>
-            <li onClick={(e) => handleAnswer(e, 3)}>{question.answers[3]}</li>
+            <li id="0" onClick={(e) => handleAnswer(e, 0)}>
+              {question.answers[0]}
+            </li>
+            <li id="1" onClick={(e) => handleAnswer(e, 1)}>
+              {question.answers[1]}
+            </li>
+            <li id="2" onClick={(e) => handleAnswer(e, 2)}>
+              {question.answers[2]}
+            </li>
+            <li id="3" onClick={(e) => handleAnswer(e, 3)}>
+              {question.answers[3]}
+            </li>
           </ol>
           <button onClick={handleNext}>Next</button>
           <p>
