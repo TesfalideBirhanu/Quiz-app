@@ -1,0 +1,73 @@
+body {
+  background-color: hsla(0, 0%, 0%, 0.953);
+}
+.quiz-container {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 30px;
+  width: 640px;
+  background-color: #fff;
+  padding: 30px 50px;
+  border-radius: 12px;
+}
+
+.quiz-container hr {
+  border: 2px solid black;
+  height: 2px;
+}
+.quiz-container ol {
+  list-style-type: none;
+  padding: 0;
+}
+.quiz-container h3 {
+  margin: 20px 0;
+}
+
+.quiz-container ol li {
+  padding: 10px 20px;
+  border: 1px solid black;
+  margin: 7px 0;
+  border-radius: 7px;
+  cursor: pointer;
+}
+.quiz-container button {
+  padding: 5px 10px;
+  color: white;
+  background-color: hsl(143, 100%, 25%);
+  border: none;
+  border-radius: 5px;
+  font-size: 1.5em;
+  cursor: pointer;
+  margin: 15px auto;
+  transition: background-color 0.5s ease;
+}
+
+.quiz-container button:hover {
+  background-color: hsl(143, 100%, 20%);
+}
+
+.correct {
+  background-color: rgba(0, 128, 0, 0.397);
+  border-color: rgba(0, 128, 0, 0.397);
+}
+.wrong {
+  background-color: rgba(128, 0, 0, 0.397);
+  border-color: rgba(128, 0, 0, 0.397);
+}
+.quiz-container p {
+  font-size: 1.1em;
+  /* font-weight: bold; */
+}
+.green {
+  color: green;
+}
+.red {
+  color: red;
+}
+
+.result h3 {
+  margin-bottom: 5px;
+  font-size: 1.4em;
+}
+.result p {
+  font-style: italic;
+}
